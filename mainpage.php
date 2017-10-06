@@ -60,7 +60,7 @@
                             <span class="profile-ava">
                                 <img alt="" src="img/avatar1_small.jpg">
                             </span>
-                            <span class="username">User</span>
+                            <span class="username"><?php echo $_SESSION["user"];?></span>
                             <b class="caret"></b>
                         </a>
 
