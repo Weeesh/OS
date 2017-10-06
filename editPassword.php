@@ -4,18 +4,20 @@
 
 
         $reader = fopen("users.csv", "r");
-        $writer = fopen("userstemp.csv", "w");
+        $writer = fopen("temp.csv", "w");
 
         $replaced = false;
-
-        $password = $_POST["pass"];
+        
+        $newPass = $_POST["pass"];
 
         while(!feof($reader)){
             $line = fgets($reader);
 
             if(stristr($line, $_SESSION["user"])){
-                $line = $_SESSION["user"].",".$password.PHP_EOL;
+                $line = $_SESSION["user"].",".$newPass.PHP_EOL;
                 $replaced = true;
+
+
             }
             fputs($writer,$line);
         }
@@ -24,15 +26,17 @@
         fclose($writer);
 
         if($replaced){
-            rename('users.csv','oldusers.csv');
-            rename('userstemp.csv', 'users.csv');
+            rename('users.csv','tempo.csv');
+            rename('temp.csv', 'users.csv');
 
-            unlink('oldusers.csv');
+            unlink('tempo.csv');
 
-            header("Location: ../os/mainpage.php");
+
             echo "edit success";
+            header("Location: ../os/mainpage.php");
         }else{
             echo "edit fail";
+            header("Location: ../os/mainpage.php");
         }
 
 

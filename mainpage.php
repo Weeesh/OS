@@ -87,7 +87,7 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">
                   <li class="active">
-                      <a class="" href="index.html">
+                      <a class="" href="mainpage.php">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
                       </a>
@@ -112,8 +112,8 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="general.html">Sales</a></li>
-                          <li><a class="" href="buttons.html">Inventory List</a></li>
+                          <li><a class="" href="buyProduct.php">Buy Product</a></li>
+                          <li><a class="" href="reports.php">Reports</a></li>
                       </ul>
                   </li>
                   
