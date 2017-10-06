@@ -12,9 +12,10 @@
 </head>
 
 <body>
-
+<img src = "img/terry.gif">
 <form action="login.php" method="post">
-    Username: <input name="user" type="text">
+    <br><br>
+    Username: <input name="user" type="text"> 
     <br><br>
     Password: <input name="pass" type="password">
     <br><br>

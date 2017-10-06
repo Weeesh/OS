@@ -19,7 +19,7 @@
         }
 
         if(array_key_exists($user, $accessData) && $pass == $accessData[$user]["password"]){
-            $_SESSION["user"] = $accessData[$user]["password"];
+            $_SESSION["user"] = $user;
             $_SESSION["verify"] = true;
             echo "login success";
             header('Location: '."mainpage.php");
