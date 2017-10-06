@@ -4,33 +4,35 @@
 <!--<script src="angularLib1.js"></script>
 <script src="angularLib2.js"></script>
 <script src="angularLib3.js"></script>
--->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+-->
 </head>
 
-<body ng-app="myApp" ng-controller="myCtrl">
+<body>
 
-<form ng-submit="login()">
-    Username: <input ng-model="username" type="text">
+<form action="login.php" method="post">
+    Username: <input name="user" type="text">
     <br><br>
-    Password: <input ng-model="password" type="password">
+    Password: <input name="pass" type="password">
     <br><br>
     <button type="submit" id="Login">Login</button>
 </form>
 <br><br>
 Register down below
 <br><br>
-<form ng-submit="register()">
-    Username: <input ng-model="user" type="text">
+<form action="register.php" method="post">
+    Username: <input name="user" type="text">
     <br><br>
-    Password: <input ng-model="pass" type="password">
+    Password: <input name="pass" type="password">
     <br><br>
     <button type="submit" id="Register">Register</button>
 </form>
 
 </body>
+<!--
 <script>
     var app = angular.module("myApp", []);
         app.controller("myCtrl", function($scope, $http) {
@@ -55,5 +57,5 @@ Register down below
 
         });
 </script>
-
+-->
 </html>
