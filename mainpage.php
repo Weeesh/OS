@@ -101,8 +101,8 @@
                       <ul class="sub">
                           <li><a class="" href="create.php">Create Product</a></li>
                           <li><a class="" href="displayStuff.php">Display Products</a></li>
-                          <li><a class="" href="mainpage.php">Update Products</a></li>
-                          <li><a class="" href="form_validation.html">Delete Products</a></li>
+                          <li><a class="" href="updateProducts.php">Update Products</a></li>
+                          <li><a class="" href="deleteProduct.php">Delete Products</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
