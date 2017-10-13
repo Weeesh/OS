@@ -7,7 +7,7 @@
         $writer = fopen("temp.csv", "w");
 
         $replaced = false;
-        
+
         $newPass = $_POST["pass"];
 
         while(!feof($reader)){
@@ -31,11 +31,9 @@
 
             unlink('tempo.csv');
 
-
-            echo "edit success";
             header("Location: ../os/mainpage.php");
         }else{
-            echo "edit fail";
+
             header("Location: ../os/mainpage.php");
         }
 
